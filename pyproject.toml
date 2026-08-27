@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sevencheck"
+version = "0.1.0"
+description = "Deterministic checks for LLM outputs: seven families of verification for the failure mode that returns a number instead of raising."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Chi-Sheng Chen" }]
+keywords = ["llm", "verification", "harness", "evaluation", "grounding", "hallucination"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/REPLACE_ME/sevencheck"
+
+[tool.setuptools.packages.find]
+include = ["sevencheck*"]
